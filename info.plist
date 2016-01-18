@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string></string>
+	<key>category</key>
+	<string>Development</string>
+	<key>connections</key>
+	<dict>
+		<key>1457D4B8-BA7B-4B07-BD21-8EB11C71BC74</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>87D2CF1D-75D9-4A7A-A6CF-FFA2C087BBB8</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>87D2CF1D-75D9-4A7A-A6CF-FFA2C087BBB8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>A46C50B0-7456-464C-B867-EF9934808B76</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Jozsef Hoffmann</string>
+	<key>description</key>
+	<string>Converts copied Scss to Sass and puts it on your clipboard</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Scss2Sass</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>keyword</key>
+				<string>scss2</string>
+				<key>subtext</key>
+				<string>Convert Scss to Sass</string>
+				<key>text</key>
+				<string>scss2sass</string>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>1457D4B8-BA7B-4B07-BD21-8EB11C71BC74</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Paste your fresh Sass!</string>
+				<key>title</key>
+				<string>Scss2Sass</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>A46C50B0-7456-464C-B867-EF9934808B76</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>4</integer>
+				<key>script</key>
+				<string>chmod 777 scss2sass.sh &amp;&amp; ./scss2sass.sh</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>87D2CF1D-75D9-4A7A-A6CF-FFA2C087BBB8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>html2jade-alfred-workflow
+=========================
+
+An Alfred workflow that converts scss to sass.</string>
+	<key>uidata</key>
+	<dict>
+		<key>1457D4B8-BA7B-4B07-BD21-8EB11C71BC74</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>87D2CF1D-75D9-4A7A-A6CF-FFA2C087BBB8</key>
+		<dict>
+			<key>ypos</key>
+			<real>160</real>
+		</dict>
+		<key>A46C50B0-7456-464C-B867-EF9934808B76</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/illusionfield</string>
+</dict>
+</plist>
